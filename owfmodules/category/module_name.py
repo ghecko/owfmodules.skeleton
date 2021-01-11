@@ -27,10 +27,10 @@ class ClassName(AModule):
         })
         # If this module depends of another
         # The syntax of a requirement specifier is defined in full in PEP 508.
-        self.dependencies.append(
+        self.dependencies.extend([
             "owfmodules.avrisp.my_module>=1.0.0",
             "owfmodules.spi.my_module>=1.0.0"
-        )
+        ])
 
     def run(self):
         """
